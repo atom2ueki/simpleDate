@@ -13,11 +13,11 @@ How to use
 
 <code>src='simpleDate.js'
 
-<h5> initialize the simpleDate
+<h5> initialize simpleDate
 
 <code>var test = new simpleDate();
 
-<h5>get the current year,month,day
+<h5>get the current year, month, day
 
 <code>test.getYear();
 

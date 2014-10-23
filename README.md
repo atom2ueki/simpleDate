@@ -8,6 +8,9 @@ but when we try to use .getMonth(), .getYear() , .getDate() weird things happene
 
 How to use
 ----------
+Download the zip file from github directly
+
+or install via bower <code> bower install simple-date
 
 <h5> link the script file
 

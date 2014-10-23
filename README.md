@@ -9,10 +9,18 @@ but when we try to use .getMonth(), .getYear() , .getDate() weird things happene
 How to use
 ----------
 
-var test = new simpleDate();
+<h5> link the script file
 
-test.getYear();  	--- you get the current  year
+<code>src='simpleDate.js'
 
-test.getMonth();	--- you get the current month
+<h5> initialize the simpleDate
 
-test.getDay();		--- you get the current day
+<code>var test = new simpleDate();
+
+<h5>get the current year,month,day
+
+<code>test.getYear();
+
+<code>test.getMonth();
+
+<code>test.getDay();

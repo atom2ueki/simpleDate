@@ -24,3 +24,5 @@ How to use
 <code>test.getMonth();
 
 <code>test.getDay();
+
+* Year is in four XXXX digits String format, Month and Day are in two XX digits String format.

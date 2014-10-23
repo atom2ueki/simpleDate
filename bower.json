@@ -1,0 +1,7 @@
+{
+  "name": "simple-date",
+  "version": "1.0.0",
+  "main": "./simpleDate.js",
+  "dependencies": {
+  }
+}

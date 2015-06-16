@@ -1,42 +1,45 @@
-var simpleDate;
+"use strict";
 
-(function () {
-	var year,
-		month,
-		day;
-	simpleDate = function() {
-		var now = new Date();
+var simpleDate = function (date) {
+	this.date = date;
+};
 
-		this.year = (now.getYear()+1900).toString();
-		
-		var tmpM = now.getMonth();
-		if (tmpM+1 < 10) {
-			var smallM = (tmpM+1).toString();
-			this.month = '0'+ smallM;
-		}
-		else {
-			this.month = (now.getMonth()+1).toString();
-		}
-		var tmpD = now.getDate();
-		if (tmpD < 10) {
-			var smallD = tmpD.toString();
-			this.day = '0'+ smallD;
-		}
-		else {
-			this.day = now.getDate().toString();
-		}
+simpleDate.prototype.getYear = function() {
+	var date =this.date
+	var year = (date.getYear()+1900).toString();
+	return year;
+};
+
+simpleDate.prototype.getMonth = function() {
+	var date =this.date
+	var month;
+	var tmpM = date.getMonth();
+	if (tmpM+1 < 10) {
+		var smallM = String(tmpM+1);
+		month = '0'+ smallM;
 	}
-
-	simpleDate.prototype.getYear = function() {
-		return this.year;
+	else {
+		month = String(date.getMonth()+1);
 	}
+	return month;
+};
 
-	simpleDate.prototype.getMonth = function() {
-		return this.month;
+simpleDate.prototype.getDay = function() {
+	var date =this.date
+	var day;
+	var tmpD = date.getDate();
+	if (tmpD < 10) {
+		var smallD = tmpD.toString();
+		day = '0'+ smallD;
 	}
-
-	simpleDate.prototype.getDay = function() {
-		return this.day;
+	else {
+		day = date.getDate().toString();
 	}
+	return day;
+};
 
-})();
+simpleDate.prototype.getYYMMDD = function() {
+	var date =this.date;
+	var tempDate = new simpleDate(date);
+	return tempDate.getYear()+'-'+tempDate.getMonth()+'-'+tempDate.getDay();
+}

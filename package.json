@@ -1,0 +1,26 @@
+{
+  "name": "simple-date",
+  "version": "1.0.0",
+  "description": "get rid of the weird js default date",
+  "main": "src/simpleDate.js",
+  "scripts": {
+    "test": "mocha src/index.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atom2ueki/simpleDate.git"
+  },
+  "keywords": [
+    "js"
+  ],
+  "author": "Tony Li",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/atom2ueki/simpleDate/issues"
+  },
+  "homepage": "https://github.com/atom2ueki/simpleDate#readme",
+  "devDependencies": {
+    "chai": "^3.3.0",
+    "mocha": "^2.3.3"
+  }
+}
